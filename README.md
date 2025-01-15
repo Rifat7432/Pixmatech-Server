@@ -69,8 +69,14 @@ cd Pixmatech-Server
 
 npm install
 
+```
+### change .env.example to .env and edit it, and run
+```
 npm run dev
 ```
+
+
+
 ## API Reference
 
 #### Register
