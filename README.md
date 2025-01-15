@@ -118,9 +118,9 @@ npm run dev
 ```
 ```
 {
-  name":"rifat",
-  "email":"md@gmail.com",
-  "password":"12345678"
+
+  "oldPassword":"12345678"
+  "newPassword":"123456789"
 }
 ```
 | Token | Type     | Description                |
@@ -130,13 +130,6 @@ npm run dev
 
 ```http
   POST /api/v2/auth/refresh-token
-```
-```
-{
-  name":"rifat",
-  "email":"md@gmail.com",
-  "password":"12345678"
-}
 ```
 | Token | Type     | Description                |
 | :-------- | :------- | :------------------------- |
