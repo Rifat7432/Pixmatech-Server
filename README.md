@@ -178,4 +178,25 @@ npm run dev
 | `Heater.Authorization` | `string` | **Required**. Your API key |
 
 
+## Gallery API Reference
+
+
+```http
+  POST /api/v2/gallery/upload-image
+```
+### Need upload image as file
+
+| Token | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `Heater.Authorization` | `string` | **Required**. Your API key |
+
+```http
+  GET /api/v2/gallery/get-image/:userId
+```
+| Token | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `Heater.Authorization` | `string` | **Required**. Your API key |
+
+
+
 
