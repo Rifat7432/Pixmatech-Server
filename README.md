@@ -77,7 +77,7 @@ npm run dev
 
 
 
-## API Reference
+## Auth API Reference
 
 
 ```http
@@ -141,4 +141,41 @@ npm run dev
 | Token | Type     | Description                |
 | :-------- | :------- | :------------------------- |
 | `cookies` | `string` | **Required**. Your API key |
+
+
+
+## User API Reference
+
+
+```http
+  GET /api/v2/users/admin
+```
+| Token | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `Heater.Authorization` | `string` | **Required**. Your API key |
+
+```http
+  GET /api/v2/users/user
+```
+| Token | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `Heater.Authorization` | `string` | **Required**. Your API key |
+
+```http
+  GET /api/v2/users/
+```
+| Token | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `Heater.Authorization` | `string` | **Required**. Your API key |
+
+
+```http
+  GET /api/v2/users/:id
+```
+```
+| Token | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `Heater.Authorization` | `string` | **Required**. Your API key |
+
+
 
