@@ -79,29 +79,66 @@ npm run dev
 
 ## API Reference
 
-#### Register
 
 ```http
-  GET /api/v2/auth/register
+  POST /api/v2/auth/login
 ```
-```
+```json
 {
-"name":"MD"
-email
+  "email":"md@gmail.com",
+  "password":"12345678"
 }
 ```
 
-#### Get item
-
 ```http
-  GET /api/items/${id}
+  POST /api/v2/auth/register
+```
+```
+{
+  name":"rifat",
+  "email":"md@gmail.com",
+  "password":"12345678"
+}
 ```
 
-| Parameter | Type     | Description                       |
-| :-------- | :------- | :-------------------------------- |
-| `id`      | `string` | **Required**. Id of item to fetch |
+```http
+  POST /api/v2/auth/register-admin
+```
+```
+{
+  name":"rifat",
+  "email":"md@gmail.com",
+  "password":"12345678"
+}
+```
 
-#### add(num1, num2)
 
-Takes two numbers and returns the sum.
+```http
+  POST /api/v2/auth/change-password
+```
+```
+{
+  name":"rifat",
+  "email":"md@gmail.com",
+  "password":"12345678"
+}
+```
+| Token | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `Heater.Authorization` | `string` | **Required**. Your API key |
+
+
+```http
+  POST /api/v2/auth/refresh-token
+```
+```
+{
+  name":"rifat",
+  "email":"md@gmail.com",
+  "password":"12345678"
+}
+```
+| Token | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `cookies` | `string` | **Required**. Your API key |
 
