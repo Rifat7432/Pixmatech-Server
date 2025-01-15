@@ -172,7 +172,6 @@ npm run dev
 ```http
   GET /api/v2/users/:id
 ```
-```
 | Token | Type     | Description                |
 | :-------- | :------- | :------------------------- |
 | `Heater.Authorization` | `string` | **Required**. Your API key |
